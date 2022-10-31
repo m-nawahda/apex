@@ -17,7 +17,6 @@ import BreackPoint from "./pages/breakPoint/breakPoints";
 import NewForwarder from "./pages/forwarder/newForwarder";
 import NewPart from "./pages/part/newPart";
 import NewSupplier from "./pages/suppliers/newSupplier";
-import NewItem from "./pages/newItem/newItem";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -41,7 +40,7 @@ export default function App() {
         <ApplicationBar />
         <div className={classes.sad}>
           <Routes>
-            <Route path="/" element={<NewItem />} />
+            <Route path="/" element={<LawnAndGarden />} />
             <Route path="/lawn-garden" element={<LawnAndGarden />} />
             <Route path="/order" element={<Order />} />
             <Route path="/lastec" element={<Order />} />

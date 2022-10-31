@@ -160,7 +160,7 @@ const ApplicationBar = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            {getPageName(location.pathname)}
+            {location.pathname.length > 1 ? getPageName(location.pathname) : 'Lawn Garden'}
           </Typography>
         </Toolbar>
       </AppBar>
