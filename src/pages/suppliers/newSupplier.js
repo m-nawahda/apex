@@ -24,6 +24,11 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
     minWidth: "50%",
   },
+  addSupplierBtn: {
+    position: "absolute",
+    bottom: "10px",
+    right: "10px",
+  },
 }));
 
 export default function NewSupplier() {
@@ -40,7 +45,7 @@ export default function NewSupplier() {
         Add/Modify Supplier
       </Typography>
 
-      <form noValidate autoComplete="off">
+      <form noValidate autoComplete="off" style={{ position: "relative" }}>
         <FormControl className={classes.formControl}>
           <TextField
             className={classes.field}
@@ -201,6 +206,7 @@ export default function NewSupplier() {
         </FormControl>
 
         <Button
+          className={classes.addSupplierBtn}
           type="Create"
           color="primary"
           variant="contained"

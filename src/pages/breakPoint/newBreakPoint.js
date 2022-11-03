@@ -1,13 +1,15 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import Container from "@material-ui/core/Container";
+import {
+  Typography,
+  Button,
+  Container,
+  TextField,
+  InputLabel,
+  FormControl,
+  Select,
+  makeStyles,
+} from "@material-ui/core";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
-import { makeStyles } from "@material-ui/core";
-import TextField from "@material-ui/core/TextField";
-import InputLabel from "@material-ui/core/InputLabel";
-import FormControl from "@material-ui/core/FormControl";
-import Select from "@material-ui/core/Select";
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -35,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const NewBreak = () => {
+const NewBreakPoint = () => {
   const classes = useStyles();
 
   return (
@@ -122,4 +124,4 @@ const NewBreak = () => {
   );
 };
 
-export default NewBreak;
+export default NewBreakPoint;

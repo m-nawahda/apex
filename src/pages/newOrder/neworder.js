@@ -106,6 +106,9 @@ const NewOrder = () => {
         color="primary"
         variant="contained"
         className={classes.addButton}
+        onClick={() => {
+          navigate("/new-customer");
+        }}
       >
         Add Customer
       </Button>

@@ -12,7 +12,7 @@ import Commissions from "./pages/commission/commissions";
 import CompletedCommissions from "./pages/commission/completedCommissions";
 import NewOrder from "./pages/newOrder/neworder";
 import NewCustomer from "./pages/newCustomer/newCustomer";
-import NewBreak from "./pages/breakPoint/newBreak";
+import NewBreakPoint from "./pages/breakPoint/newBreakPoint";
 import BreackPoint from "./pages/breakPoint/breakPoints";
 import NewForwarder from "./pages/forwarder/newForwarder";
 import NewPart from "./pages/part/newPart";
@@ -53,7 +53,7 @@ export default function App() {
             <Route path="/completed-commissions" element={<CompletedCommissions />} />
             <Route path="/new-customer" element={<NewCustomer />} />
             <Route path="/new-order" element={<NewOrder />} />
-            <Route path="/new-break" element={<NewBreak />} />
+            <Route path="/new-break-point" element={<NewBreakPoint />} />
             <Route path="/break-point" element={<BreackPoint />} />
             <Route path="/new-forwarder" element={<NewForwarder />} />
             <Route path="/new-part" element={<NewPart />} />

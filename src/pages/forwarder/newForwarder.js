@@ -26,6 +26,11 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
     minWidth: "50%",
   },
+  addForwarderBtn: {
+    position: "absolute",
+    bottom: "10px",
+    right: "10px",
+  },
 }));
 
 const NewForwarder = () => {
@@ -42,7 +47,7 @@ const NewForwarder = () => {
         Add/Modify Forwarder
       </Typography>
 
-      <form noValidate autoComplete="off">
+      <form noValidate autoComplete="off" style={{ position: "relative" }}>
         <FormControl className={classes.formControl}>
           <TextField
             className={classes.field}
@@ -203,6 +208,7 @@ const NewForwarder = () => {
         </FormControl>
 
         <Button
+          className={classes.addForwarderBtn}
           type="Create"
           color="primary"
           variant="contained"
